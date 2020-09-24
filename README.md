@@ -50,3 +50,16 @@
   * Response Body
     * Your file: html, css, js, image
     * Or your results: json, xml
+
+#### Servers and Scaling
+* Key points:
+  * Backend: Web server(Basic Apache serving files) or Web Application(Advanced)
+  * Web server: Based on the path, it will serve assets
+    * Host to filesystem mapping
+    * Configures different hosts to different folders
+  * Web application: Will process based on path, like getting data from db and serving it after injecting into a template
+    * Application, Database and file system
+    * Will also do some API processing like delete, edit etc
+    * Also serves static assets
+  * For scaling, when the load increases, add more powerful server or even better alternative is have multiple copies running
+  * Use loadbalancer to distribute the traffic

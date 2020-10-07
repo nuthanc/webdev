@@ -27,3 +27,12 @@ a {
   text-decoration: none;
   margin: 10px;
 }
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__optionLineOne {
+  font-size: 13px; 
+}

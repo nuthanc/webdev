@@ -63,3 +63,7 @@
     * Also serves static assets
   * For scaling, when the load increases, add more powerful server or even better alternative is have multiple copies running
   * Use loadbalancer to distribute the traffic
+
+### HTML vs HTML5
+* HTML5 is more semantic
+* Also improves the performance of the web

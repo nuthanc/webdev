@@ -67,3 +67,8 @@
 ### HTML vs HTML5
 * HTML5 is more semantic
 * Also improves the performance of the web
+
+### Copy a Website
+* Good website to read: waitbutwhy.com
+* View Page Source 
+* Copy and Paste into your file

@@ -72,3 +72,21 @@
 * Good website to read: waitbutwhy.com
 * View Page Source 
 * Copy and Paste into your file
+
+### CSS
+* Good resource: https://css-tricks.com/almanac/
+
+### CSS selectors
+```txt
+> is for direct child
+h2 > p
+<h2><p></p><h2>
+h2 as parent of p
+<h2><div><p></p></div><h2>
+Doesn't apply here
+
+h2 p is for descendant
+p in h2
+
++ is for adjacent sibling
+```

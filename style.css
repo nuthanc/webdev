@@ -2,9 +2,21 @@ h2 {
   color: red;
 }
 
+img {
+  float: right; 
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
 
 p {
-  color: green
+  color: green;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 h2{

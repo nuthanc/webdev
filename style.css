@@ -1,43 +1,23 @@
-h2 {
-  color: red;
+.wildlife__images {
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 img {
-  float: right; 
+  object-fit: cover;
+  width: 350px;
+  height: 250px;
+  margin: 10px;
 }
 
-footer {
-  clear: both;
+h1{
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  width: 400px;
   text-align: center;
-}
-
-p {
-  color: green;
-  line-height: 10px;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-h2{
-  text-align: center;
-  border: 10px solid purple;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-}
-
-body {
-  background-image: url('https://images.unsplash.com/photo-1560336767-9bb468f204c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#home {
-  cursor: pointer;
 }

@@ -11,6 +11,11 @@ img {
   width: 350px;
   height: 250px;
   margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 h1{

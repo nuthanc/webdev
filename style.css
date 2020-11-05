@@ -1,28 +1,64 @@
-.wildlife__images {
-  display: flex;
-  /* flex-direction: column;
-  align-items: center; */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-img {
-  object-fit: cover;
-  width: 350px;
-  height: 250px;
-  margin: 10px;
-  transition: all 1s;
-}
-
-img:hover {
-  transform: scale(1.1);
-}
-
 h1{
-  font-family: fantasy;
-  font-size: 3em;
-  border-bottom: 2px solid pink;
-  border-right: 2px solid pink;
-  width: 400px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.robot {
+  width: 500px;
+  height: 500px;
+  /* background-color: red; */
+  margin: auto
+}
+
+.robot__head {
+  width: 300px;
+  height: 250px;
+  background-color: #5488f7;
+  margin: auto;
+  border-radius: 250px 250px 0 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.robot__eyes {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.robot__center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.robot__arm {
+  width: 60px;
+  height: 200px;
+  border-radius: 500px;
+  background-color: #5488f7;
+}
+
+.robot__body {
+  background-color: #5488f7;
+  width: 300px;
+  height: 300px;
+  border-radius: 0 0 100px 100px;
+}
+
+.robot__bottom {
+  width: 300px;
+  margin: -40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.robot__leg {
+  width: 60px;
+  height: 150px;
+  border-radius: 500px;
+  background-color: #5488f7;
 }

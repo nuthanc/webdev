@@ -20,6 +20,11 @@ h1{
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
+
+}
+
+.robot__head:hover {
+  transform: scale(1.1);
 }
 
 .robot__eyes {
@@ -61,4 +66,8 @@ h1{
   height: 150px;
   border-radius: 500px;
   background-color: #5488f7;
+}
+
+.robot__leg:hover {
+  transform: translate(45px, 2px);
 }

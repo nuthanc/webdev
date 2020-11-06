@@ -69,5 +69,5 @@ h1{
 }
 
 .robot__leg:hover {
-  transform: translate(45px, 2px);
+  transform: rotate(30deg);
 }

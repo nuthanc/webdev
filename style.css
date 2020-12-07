@@ -1,23 +1,25 @@
-.wildlife__images {
+body, html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+}
+.landing__text {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
-img {
-  object-fit: cover;
-  width: 350px;
-  height: 250px;
-  margin: 10px;
-}
 
-h1{
-  font-family: fantasy;
-  font-size: 3em;
-  border-bottom: 2px solid pink;
-  border-right: 2px solid pink;
-  width: 400px;
-  text-align: center;
+body {
+  background-image: url(header.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

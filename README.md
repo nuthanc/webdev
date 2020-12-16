@@ -9,3 +9,6 @@
   * The container must have display of grid
 * Another cool CSS size property is fr
   * fr stands for fraction
+* Cool properties:
+  * repeat(n, size)
+  * auto: Max size of content

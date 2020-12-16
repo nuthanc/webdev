@@ -12,3 +12,8 @@
 * Cool properties:
   * repeat(n, size)
   * auto: Max size of content
+  * justify-items: Row axis
+    * start
+    * end
+    * Check this by Inspecting in Chrome
+  * align-items: Column axis

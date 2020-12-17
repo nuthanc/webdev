@@ -17,3 +17,7 @@
     * end
     * Check this by Inspecting in Chrome
   * align-items: Column axis
+* Super common pattern
+  * grid-template-columns: repeat(auto-fill, 300px)
+  * Even more optimized is use minmax
+  

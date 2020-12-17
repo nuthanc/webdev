@@ -20,4 +20,15 @@
 * Super common pattern
   * grid-template-columns: repeat(auto-fill, 300px)
   * Even more optimized is use minmax
-  
+* Another property is grid-column
+  * grid-column-start and grid-column-end
+    * grid-column-start: 1
+    * grid-column-end: 3
+    * Start at 1 and end at 3
+  * Short hand for the above: 
+    * grid-column: 1/3
+  * -1 is for the end of the viewport
+    * grid-column: 1/-1;
+  * span across n grids
+    * grid-column: span 3
+* Similarly grid-row

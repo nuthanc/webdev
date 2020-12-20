@@ -1,18 +1,17 @@
 # Webdev course by Andrei
 
-### Layout Exercise
-* Layout Exercise with Header, Cover, Project Grid and Footer
-
-### Implementation by Author
-* Used nav for Header(My bad for using div)
-* View getting ugly as navigation becomes smaller
-* Media Queries
-  * Link: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-* Use vh for making height responsive
-  * viewport height
-  * If you give 100vh, then it will be 100% of the screen
-
-### Prettify Solution
-* Using Illustration and Designs from Link: https://lukaszadam.com/illustrations and https://illlustrations.co/
-* Make nav element sticky
-* Change font family
+### Web Developer Career
+* What If I don't have Enough Experience?
+  * Non-technical people trying to scare Junior developers
+  * Go for it even if you think you are not qualified for it
+  * Ways to get the Job
+    * Github
+    * Website
+      * Creative Tim or any other Free templates
+      * Contribute to ZTM or other Open source projects
+    * 1-2 Big Projects
+    * Blog
+* When you are stuck?
+  * Rubber duck
+  * StackOverflow or Google
+  * Discord: Mostly in Coding Section or helpme channel

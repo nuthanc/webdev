@@ -11,3 +11,8 @@
 * Use vh for making height responsive
   * viewport height
   * If you give 100vh, then it will be 100% of the screen
+
+### Prettify Solution
+* Using Illustration and Designs from Link: https://lukaszadam.com/illustrations and https://illlustrations.co/
+* Make nav element sticky
+* Change font family

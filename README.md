@@ -6,3 +6,6 @@
 * Each Browser has a Javascript Engine
 * document is an object which is used to modify the HTML and CSS
 * window is the parent object of document
+
+### DOM exercise
+* 

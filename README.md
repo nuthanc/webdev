@@ -8,4 +8,5 @@
 * window is the parent object of document
 
 ### DOM exercise
-* 
+* My implementation in commit: 77027251eacd294ac3585c97c41e5db5eb539dbf
+

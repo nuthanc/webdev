@@ -18,3 +18,4 @@
 * Cool things with HTML and CSS
   * input type of color: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
   * css linear gradient: https://www.w3schools.com/css/css3_gradients.asp
+* Instead of adding event listeners, we can also add oninput in html itself and call setGradient function

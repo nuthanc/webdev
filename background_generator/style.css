@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gradients {
+  display: flex;
+}
+
+.color {
+  margin: 0 5px;
+}
+
+body {
+  background-image: linear-gradient(to right, #1ad1ff, #e10e0e);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}

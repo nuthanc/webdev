@@ -11,3 +11,10 @@
 * My implementation in commit: 77027251eacd294ac3585c97c41e5db5eb539dbf
 
 ### Colt-steele implementation in author_colt
+* Todo list implementation
+
+### Background Generator in background_generator
+* Gradient using js
+* Cool things with HTML and CSS
+  * input type of color: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+  * css linear gradient: https://www.w3schools.com/css/css3_gradients.asp

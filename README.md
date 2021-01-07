@@ -1,6 +1,10 @@
 # Webdev course by Andrei
 
-### Project Portfolio
-* https://github.com/cobidev/simplefolio
-* https://github.com/cobidev/gatsby-simplefolio
-* hatchful logo maker for free logos
+### Robofriends project
+* Andrei's Robofriend repo: https://github.com/aneagoie/robofriends
+* Demo: https://aneagoie.github.io/robofriends/
+
+### Project start
+```sh
+npx create-react-app robofriends
+```

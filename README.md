@@ -7,4 +7,5 @@
 ### Project start
 ```sh
 npx create-react-app robofriends
+npm install react-bootstrap bootstrap
 ```

@@ -3,10 +3,10 @@ import './Title.css';
 
 const Title = () => {
   return (
-    <h1>
-      ROBOFRIENDS
-    </h1>
-  )
+    <div className="Title">
+      <h1>ROBOFRIENDS</h1>
+    </div>
+  );
 }
 
 export default Title;

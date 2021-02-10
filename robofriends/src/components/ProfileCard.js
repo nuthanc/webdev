@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card'
 const ProfileCard = (props) => {
   const { avatar, name, email } = props.profile;
   return (
-    <Card >
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card style={{ width: '14rem', backgroundColor: 'lightblue',borderRadius: '5%' }} className="m-3">
+      <Card.Img variant="top" src={avatar} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Subtitle>{email}</Card.Subtitle>
@@ -16,3 +16,4 @@ const ProfileCard = (props) => {
 };
 
 export default ProfileCard;
+<img alt="robots" src="https://robohash.org/3?size=200x200"></img>

@@ -1,20 +1,21 @@
 import React from 'react';
 import './SearchBox.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const SearchBox = ({ hello }) => {
-  const [term, setTerm] = useState(null);
+const SearchBox = ({ searchTerm }) => {
+  const [term, setTerm] = useState("");
+
+  useEffect(() => {
+    searchTerm(term)
+  }, [term])
+  
   return (
     <div className="SearchBox">
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          hello(term);
-        }}
-      >
+      <form>
         <input
           className="SearchBox-input"
           placeholder="search robots"
+          value={term}
           onChange={(e) => setTerm(e.target.value)}
         />
       </form>

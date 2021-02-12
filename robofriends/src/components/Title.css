@@ -1,5 +1,9 @@
 h1 {
   font-family: 'Bungee Shade', cursive;
   color: rgb(28, 172, 172);
+}
+
+.Title h1 {
   font-size: 3rem;
+  margin: 2rem 0;
 }

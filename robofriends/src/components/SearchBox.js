@@ -11,14 +11,12 @@ const SearchBox = ({ searchTerm }) => {
   
   return (
     <div className="SearchBox">
-      <form>
-        <input
-          className="SearchBox-input"
-          placeholder="search robots"
-          value={term}
-          onChange={(e) => setTerm(e.target.value)}
-        />
-      </form>
+      <input
+        className="SearchBox-input"
+        placeholder="search robots"
+        value={term}
+        onChange={(e) => {setTerm(e.target.value)}}
+      />
     </div>
   );
 };

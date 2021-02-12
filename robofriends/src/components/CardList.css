@@ -1,4 +1,7 @@
 .CardList {
   display: flex;
   flex-wrap: wrap;
+  height: 50rem;
+  overflow-y: scroll;
+  border: 0.2rem solid black;
 }

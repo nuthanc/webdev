@@ -30,6 +30,32 @@ p in h2
 * clear property for float
 
 ### CSS specificity
+* Inline style in 1000s
 * ID in 100s
 * Class, pseudo-class and attributes in 10s
 * Elements in units
+
+### Box model
+* Every element has a box
+* Each box has Inner Content box, padding, border and margin
+* Inner Content box: weight and height
+
+### Borders
+* Generally units in px because they are very small
+* We don't see anything unless we provide the color and style
+* If we provide border-box, then width of element including border will be considered
+
+### Inline and Block elements
+* Inline elements fit in alongside other elements
+* Block level elements take up a whole **block** of space
+
+### Display
+* Inline
+  * Width and Height are ignored
+  * Margin and Padding push elements away horizontally but not vertically
+* Block
+  * Breaks the flow of the document
+  * Width, Height, Margin and Padding are respected
+* Inline-block
+  * Behaved like an inline element except
+  * Width, Height, Margin and Padding are respected

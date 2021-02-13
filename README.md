@@ -59,3 +59,6 @@ p in h2
 * Inline-block
   * Behaved like an inline element except
   * Width, Height, Margin and Padding are respected
+
+### ems and rems 
+* Check the resources attached

@@ -220,3 +220,16 @@
 
 ##### Overview of Entity, Attribute and Relationship
 ![ov](img/ov.png)
+
+##### DriveMe Relationships
+
+* School has many instructors, but Instructors teaches at one and only one School
+* School has many Students, but Student attends one and only one School
+* Instuctor can take multiple Lessons, but each Lesson is taught by only one and only Instructor
+* Student can take multiple Lessons, but each Lesson belongs to only one and only Student
+* Lesson can have multiple Exams(1 or 2), but an Exam can only be linked to one Lesson
+* Lesson can have one and onle one Vehicle, Vehicle can belong to one or more multiple lessons
+* Vehicle has 0 or more Maintenance, a Maintenance belongs to only one Vehicle
+![r](img/r.png)
+* There is no many to many relationships
+* If Lesson was not in between, we could have had many to many relationship between Student and Instructor

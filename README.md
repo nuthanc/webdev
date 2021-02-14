@@ -70,3 +70,24 @@
   * Data Collection
   * Deep Understanding
 * **Key method**: ER-Modelling
+
+### ER model
+
+* Entity Relationship model
+* Diagram to structure high level requirements
+![erd](img/erd.png)
+
+### Tooling for Diagramming
+
+* UMLet 
+* LucidChart
+* draw.io now app.diagrams.net(What I thought)
+
+#### Step 1: Entities
+
+* Determine what entities are in the System
+* **What is an Entity**
+  * A person/place or thing
+  * Has a singular name
+  * Has an Identifier
+  * Should contain more than one instance of data

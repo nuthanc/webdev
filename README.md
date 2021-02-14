@@ -181,3 +181,20 @@
 
 * Key which has Nothing to do with the individual's data
 ![sk](img/sk.png)
+
+##### DriveMe Attributes(Author in GDocs)
+
+* School
+  * school_id, street_name, street_nr, postal_code, state, city
+    * Note: address split into street...
+* Instructor
+  * instructor_id, first_name, last_name, date_of_birth, hiring_date, school_id
+* Student
+  * student_id, first_name, last_name, date_of_birth, *enrollment_date*, school_id
+* Exam
+  * student_id, instructor_id, date_taken, passed, lesson_id
+* Lesson
+  * lesson_id, date_of_enrollemnt, package, student_id
+
+* From this foreign keys(student_id, instructor_id and lesson_id) we can come up with relationships(Exam linked to Student, Teacher and Lesson)
+* If the client calls it Instructor, you also name the same

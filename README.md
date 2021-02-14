@@ -91,3 +91,27 @@
   * Has a singular name
   * Has an Identifier
   * Should contain more than one instance of data
+
+##### DriveMe Academy Entities
+
+* Link: https://app.diagrams.net/#Hnuthanc%2Fwebdev%2Fdb_sd%2FDriveMe.drawio
+* Student
+* School(Branch)
+* Instructor
+* Vehicle
+* For Maintenance, we frame questions like what would it hold
+  * Date of maintenance(If only this were present, it could have been added in Vehicle entity)
+  * What kind of maintenance
+  * Who did it
+  * Where did it happen
+  * Since we have multiple columns, we have Maintenance also as an entity
+* Exam
+* Lesson
+
+##### Relationships
+
+* School has Instructor
+* School has Student
+* Student takes Lesson
+* Instructor teaches Lesson
+* Vehicle has Maintenance

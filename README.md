@@ -198,3 +198,25 @@
 
 * From this foreign keys(student_id, instructor_id and lesson_id) we can come up with relationships(Exam linked to Student, Teacher and Lesson)
 * If the client calls it Instructor, you also name the same
+
+#### Step 3: Relationships
+
+* Determine the Relationships between the Entities
+* **What is a Relationship**
+  * Links 2 Entities together:
+    * 1 to 1
+    * 1 to many
+    * many to many
+![cf](img/cf.png)
+* In the above diagram,
+  * 1st line after the Entity is the Relationship
+    * Many sign
+    * 1 sign
+  * 2nd is the Constraint(circle means 0, 1 means 1)
+    * 0 or more
+    * 1 or more
+    * 1 and only 1
+    * 0 or 1
+
+##### Overview of Entity, Attribute and Relationship
+![ov](img/ov.png)

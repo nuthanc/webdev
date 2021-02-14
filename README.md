@@ -153,6 +153,16 @@
 * Subset of Super Key
 * The **minimum amount of attributes** that are needed to uniquely identify a row
 * Examples:
-  * id and firstName
   * email
   * id
+
+##### Primary Key
+
+* Relation key that uniquely identifies the relationship
+* 2 candidate keys: id and email
+
+##### Foreign Key
+
+* Reference a primary key from a different table
+* Link manager to employees using managerId
+![fk](img/fk.png)

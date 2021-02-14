@@ -166,3 +166,18 @@
 * Reference a primary key from a different table
 * Link manager to employees using managerId
 ![fk](img/fk.png)
+
+##### Compound Key
+
+* More than 1 column and that includes a foreign key uniquely identifying the data
+![ck](img/ck.png)
+
+##### Composite Key
+
+* More than 1 column and that does not include the foreign key uniquely identifying the data
+![ct](img/ct.png)
+
+##### Surrogate Key
+
+* Key which has Nothing to do with the individual's data
+![sk](img/sk.png)

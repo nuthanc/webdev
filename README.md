@@ -115,3 +115,13 @@
 * Student takes Lesson
 * Instructor teaches Lesson
 * Vehicle has Maintenance
+
+#### Step 2: Attributes
+
+* Give Entities the Information they will store
+* **What are Attributes**
+  * Must be a property of the entity
+  * Must be Atomic
+    * Narrowing down to the most small
+  * Single/Multivalued (Phone NR)
+  * Keys

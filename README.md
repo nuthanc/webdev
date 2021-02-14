@@ -132,3 +132,27 @@
 * For eg.: Relation Schema for User table is id, firstName, lastName, sex and dob
 * Relation Instance is the set of data that relates to the Relation Schema
 ![rs](img/relation.png)
+
+##### Relation Key
+
+* Purpose: Uniquely identify each and every row in turn uniquely identify the relationship
+
+##### Super Key
+
+* **Any combination of attributes** that could uniquely identify a row
+* Examples:
+  * id and firstName
+  * id and email
+  * firstName and email
+  * id, firstName and lastName
+  * id, firstName, lastName and sec
+  * etc
+
+##### Candidate Key
+
+* Subset of Super Key
+* The **minimum amount of attributes** that are needed to uniquely identify a row
+* Examples:
+  * id and firstName
+  * email
+  * id

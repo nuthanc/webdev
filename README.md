@@ -53,8 +53,20 @@
 * You can only take the exam twice, fail twice and you must take more lessons
 
 ### How do we model a database(What I thought)
+
 * Vehicle Entity: (name, type, cid, status: maintenance, acquired, free)
 * Employees: (eid, name, contact, address)
 * Customer: (id, name, contact, address)
 * Exam: (cid, status)
 
+### Top down Design
+
+* **Goal**: To Create a Data Model based on Requirements
+* Requirements: What are we looking for?
+  * High-Level Requirements
+    * Based on communication with client
+  * User Interviews
+    * Talk with Users and get the Requirement
+  * Data Collection
+  * Deep Understanding
+* **Key method**: ER-Modelling

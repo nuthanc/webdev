@@ -21,3 +21,23 @@
 
 * Phase 1 and 2: Business people
 * Phase 3 and 4: Developers
+
+### Database Design
+
+* Top Down
+* Bottom Up
+
+### Top Down
+
+* Starting from Zero
+* Optimal choice when creating a new Database
+* All requirements are gathered Up-Front
+
+### Bottom Up
+* There's an existing system or specific data in place
+* E.g Doctor and Symptoms
+* Shape a **new system** around the **existing data**
+* Optimal choice when migrating an existing database
+
+### What to Use
+* Often you'll end up using a bit of both

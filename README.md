@@ -125,3 +125,10 @@
     * Narrowing down to the most small
   * Single/Multivalued (Phone NR)
   * Keys
+
+##### Relation Schema and Instance
+
+* Relation Schema is the Table Schema(Representation of data going into the table)
+* For eg.: Relation Schema for User table is id, firstName, lastName, sex and dob
+* Relation Instance is the set of data that relates to the Relation Schema
+![rs](img/relation.png)

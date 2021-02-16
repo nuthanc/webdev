@@ -251,3 +251,12 @@
 * Think of creating a Intermediate type
   * Like Book Author
   * Or Lesson
+
+#### Step 5: Subject Area
+
+* Divide Entities into Logical Groups that are Related(Think Schemas)
+* Subject Area Rules
+  * All entities must belong to one
+  * An entity can only belong to one
+  * You can nest subject areas
+![sa](img/sa.png)

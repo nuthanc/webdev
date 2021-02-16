@@ -233,3 +233,21 @@
 ![r](img/r.png)
 * There is no many to many relationships
 * If Lesson was not in between, we could have had many to many relationship between Student and Instructor
+
+#### Step 4: Many to Many
+
+* In this Relational Model, it isn't possible to store a Many to Many Relationship
+* Technically you can do it, but you really don't want to
+* The reason for this is You create move overhead
+  * Insert Overhead
+  * Update Overhead
+  * Delete Overhead
+  * Potential Redundancy
+* As a rule of thumb, always try to resolve Many to Many
+![m2m](img/m2m.png)
+  * Mistake in the above diagram, Instead of Many after Book, it should be one and only
+* A book can have multiple Book authors, but a Book Author can belong to only one Book
+![m2meg](img/m2meg.png)
+* Think of creating a Intermediate type
+  * Like Book Author
+  * Or Lesson

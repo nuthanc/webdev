@@ -260,3 +260,44 @@
   * An entity can only belong to one
   * You can nest subject areas
 ![sa](img/sa.png)
+
+### Exercise: Paintings
+
+![pe](img/pe.png)
+* Constraints:
+  * A Painting can only have one Artist
+* Questions about the System:
+  * What's the goal of the system
+    * Track Painting Reservations for a Wealthy man
+  * Who are our Stakeholders
+    * Owner, Museums
+
+#### My Analysis
+* Entities and Attributes
+  * Painting: Id, Artist Id, Museum id, Date, Name
+  * Museum: Id, Place
+  * Reservation: Customer Id, Id, Museum Id, Date
+  * Artist: Name, Place and Paintings(For this, I thought of another table containing Artist id to Painting id)
+  * Customer: Id, Name, Place
+* Relationships
+  * Artist to Painting(One to Many)
+  * Museum to Painting(One to Many)
+  * Reservation to Customer(One to Many)
+
+#### Instructor's Analysis
+* Entities and Attributes
+  * Painting: name, creation_date, style
+  * Reservation: creation_date, date_from, date_to, accepted
+  * Museum: name, address, phone_nr, email
+  * Artist: name, birth_date, email
+* Relationships
+  * Artist to Painting(One to Many)
+  * Painting to Reservation(Many to Many)
+  * Museum to Reservation(One to Many)
+![ex3](img/ex3.png)
+* Solving Many to Many
+![emtm](img/emtm.png)
+* Subject Areas
+  * Administration: Reservation, Reservation_Detail
+  * Inventory: Painting, Artist
+  * Client: Museum

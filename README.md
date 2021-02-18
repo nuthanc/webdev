@@ -313,3 +313,19 @@
 2. Group them(Entities)
 
 * Goal: Create a Perfect Data Model without Redundancy(Duplicate data) and Anomalies
+
+### 
+![anomalies](img/anomalies.png)
+![update](img/up.png)
+If we want to change address, we need to change in all the places(instead of one which we ideally desire)
+
+![delete](img/del.png)
+Dependency between Customer and Branch
+Deleting a Customer makes us lose the Branch details
+
+![insert](img/ins.png)
+
+We want low coupling
+
+![normalized](img/normal.png)
+Avoiding Anomalies is key to Database Design

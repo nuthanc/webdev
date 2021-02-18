@@ -314,7 +314,7 @@
 
 * Goal: Create a Perfect Data Model without Redundancy(Duplicate data) and Anomalies
 
-### 
+### Anomalies
 ![anomalies](img/anomalies.png)
 ![update](img/up.png)
 If we want to change address, we need to change in all the places(instead of one which we ideally desire)

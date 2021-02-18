@@ -301,3 +301,8 @@
   * Administration: Reservation, Reservation_Detail
   * Inventory: Painting, Artist
   * Client: Museum
+
+### Exercise: Cinema
+
+![cinema](img/cinema.png)
+![cin_sol](img/cin_sol.png)

@@ -306,3 +306,10 @@
 
 ![cinema](img/cinema.png)
 ![cin_sol](img/cin_sol.png)
+
+### Bottom-Up Design
+
+1. Identify the Data(Attributes)
+2. Group them(Entities)
+
+* Goal: Create a Perfect Data Model without Redundancy(Duplicate data) and Anomalies

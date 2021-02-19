@@ -368,3 +368,4 @@ Avoiding Anomalies is key to Database Design
 * Normalization happens through a Process of running Attributes through the Normal Forms
 * Each Normal Forms Aims to further Separate Relationships into Smaller Instances as to Create less Redundancy and Anomalies
 * Simple Guide to Five Normal Forms in Relational Database Theory: http://www.bkent.net/Doc/simple5.htm
+* Advanced Data Normalisation: https://www.cs.uct.ac.za/mit_notes/database/htmls/chp09.html

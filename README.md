@@ -336,3 +336,29 @@ Avoiding Anomalies is key to Database Design
 * Top-Down: ERD
 * Bottom-Up: Normalization
 * Bit of both
+
+### Functional Dependency
+
+* A Functional Dependency shows a Relationship between Attributes
+* Functional Dependency Exists when a Relationship between two Attributes allows you to **uniquely determine the corresponding Attribute's value**
+* Entity as **R** and Attributes as **A and B**
+* We say that A is functional dependent on B when a **value of B determines a value of A**
+  * B -> A
+  * Determinant -> Dependant
+  * E.g. Emp_Num -> First_Name
+  * but this is not true other way around, i.e First_Name -> Emp_Num, as there can be many Andrei's as First_Name but their Emp_Num would be different
+  * Another E.g, Student_id -> Birth_Date
+
+#### Functional Dependencies Example
+
+![fde](img/fde.png)
+* Determine which ones are right and which ones are wrong
+* Only Proj_Id, Emp_No -> Salary is the correct functional dependency
+* Key is one unique outcome
+
+![sfd](img/sfd.png)
+* None of these are right
+* When we grab a student, we can't get a unique activity which they do
+* When we grab an activity like shark diving, we can't derive a student_no
+* Can't uniquely identify a contribution solely based on Activity
+* Correct answer is Student_No, Activity -> Contribution

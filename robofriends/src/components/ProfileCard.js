@@ -3,7 +3,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card'
 
 const ProfileCard = (props) => {
-  const { avatar, name, email } = props.profile;
+  const { id, name, email } = props.profile;
+  const avatar = `https://robohash.org/${id}?size=200x200`;
   return (
     <Card style={{ width: '14rem', backgroundColor: 'lightblue',borderRadius: '5%' }} className="m-3 card">
       <Card.Img variant="top" src={avatar} />

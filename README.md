@@ -330,3 +330,9 @@ We want low coupling
 
 ![normalized](img/normal.png)
 Avoiding Anomalies is key to Database Design
+
+### Summary of System Design
+
+* Top-Down: ERD
+* Bottom-Up: Normalization
+* Bit of both

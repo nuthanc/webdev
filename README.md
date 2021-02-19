@@ -362,3 +362,9 @@ Avoiding Anomalies is key to Database Design
 * When we grab an activity like shark diving, we can't derive a student_no
 * Can't uniquely identify a contribution solely based on Activity
 * Correct answer is Student_No, Activity -> Contribution
+
+### Normalization
+
+* Normalization happens through a Process of running Attributes through the Normal Forms
+* Each Normal Forms Aims to further Separate Relationships into Smaller Instances as to Create less Redundancy and Anomalies
+* Simple Guide to Five Normal Forms in Relational Database Theory: http://www.bkent.net/Doc/simple5.htm

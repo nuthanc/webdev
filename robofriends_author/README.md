@@ -8,4 +8,9 @@
 * Just like me, Andrei used profiles(which he called robots in robots.js)
   * His object properties were id, name, email and username
 
-#### CardList Component
+* CardList Component
+* Next he used App components instead of CardList in index.js
+* Turned App to a Class based Component to have state and Callback
+* Used tachyons for styling of Components
+* Use Sega Fonts for fonts
+* Use jsonplaceholder api to make app more realistic

@@ -369,3 +369,43 @@ Avoiding Anomalies is key to Database Design
 * Each Normal Forms Aims to further Separate Relationships into Smaller Instances as to Create less Redundancy and Anomalies
 * Simple Guide to Five Normal Forms in Relational Database Theory: http://www.bkent.net/Doc/simple5.htm
 * Advanced Data Normalisation: https://www.cs.uct.ac.za/mit_notes/database/htmls/chp09.html
+
+#### 0 NF
+
+* Data is Unnormalized
+  * Repeating groups of fields
+  * Positional Dependence of Data
+  * Non-Atomic Data
+
+#### 1 NF
+
+* Eliminate Repeating Columns of the same Data
+  * Table contains two or more columns that are closely related
+  * Eg for this is: Book, author1, author2, author3
+* Each Attribute should contain a Single value
+  * Eg: color, quantity, price
+    * color having red, green,blue and yellow,orange,purple etc
+* Determine a Primary Key
+
+![0to1](img/0to1.png)
+![0to1p2](img/0to1p2.png)
+
+#### 2 NF
+
+* It is in 1NF
+* All Non-key Attributes are fully Functional Dependent on the Primary Key
+
+![2nf](img/2nf.png)
+* book_id can't determine the author_name
+* author_id can determine the author_name
+
+#### 3 NF
+
+* It is in 2NF
+* No transitive dependencies
+  * A is functionally dependent on B, and B is functionally dependent on C, C is transitively dependent on A via B
+  * B -> A, C -> B, A ~> C
+  * Or normally, A->B, B->C, A->C
+
+![3nf1](img/3nf1.png)
+![3nf2](img/3nf2.png)

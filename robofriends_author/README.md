@@ -19,3 +19,7 @@
 
 * Replacing div of root with our components in the DOM
 * Order of execution: constructor, render, componentDidMount and render again(since state changes or updates)
+
+### Scroll component
+
+* I didn't have this. I just gave style of overflow-y: scroll to the CardList component

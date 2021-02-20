@@ -23,3 +23,8 @@
 ### Scroll component
 
 * I didn't have this. I just gave style of overflow-y: scroll to the CardList component
+
+### Organizing Project files
+
+* Move pure Components to components folder
+* Move Components with State to containers folder

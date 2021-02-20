@@ -14,3 +14,8 @@
 * Used tachyons for styling of Components
 * Use Sega Fonts for fonts
 * Use jsonplaceholder api to make app more realistic
+
+### App mounting
+
+* Replacing div of root with our components in the DOM
+* Order of execution: constructor, render, componentDidMount and render again(since state changes or updates)

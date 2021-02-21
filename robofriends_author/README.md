@@ -28,3 +28,12 @@
 
 * Move pure Components to components folder
 * Move Components with State to containers folder
+
+### Error Boundary
+
+![error boundary](img/errBd.png)
+* componentDidCatch like try catch
+  * If anything errors, it will run this Lifecycle hook
+* In App.js, import ErrorBoundry and wrap CardList with ErrorBoundary
+* ErrorBoundary good for Production
+* In Development, it will show the detailed Error

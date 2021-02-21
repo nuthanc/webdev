@@ -409,3 +409,18 @@ Avoiding Anomalies is key to Database Design
 
 ![3nf1](img/3nf1.png)
 ![3nf2](img/3nf2.png)
+
+#### BCNF
+
+* It is in 3 NF
+* For any dependency A -> B, A should be a Super Key
+* 3 NF allows Attributes to be part of a Candidate Key that is not the Primary Key, but BCNF does not
+* A Relationship is not in BCNF if:
+  * The Primary Key is a Composite Key
+  * There is more than one Candidate Key
+  * Some Attributes have Keys in Common
+* Below not in BCNF
+
+![nbcnf](img/nbcnf.png)
+![bcnf](img/bcnf.png)
+

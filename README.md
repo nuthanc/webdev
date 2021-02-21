@@ -10,4 +10,4 @@ npx create-react-app robofriends
 npm install react-bootstrap bootstrap
 ```
 
-### Check Project's READMEs
+### Check Project's READMEs and also other branches

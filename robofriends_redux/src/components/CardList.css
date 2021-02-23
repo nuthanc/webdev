@@ -1,9 +1,7 @@
 .CardList {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50rem;
+  height: 800px;
   overflow-y: scroll;
-  border: 0.2rem solid black;
+  border: 0.2rem solid rgb(206, 196, 59);
 }
 
 .card:hover {

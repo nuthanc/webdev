@@ -13,3 +13,7 @@
 ### Flux pattern
 
 * Action -> Dispatcher -> Store -> View
+
+### Check for more in Robofriends with Redux Readme
+
+* https://github.com/nuthanc/webdev/tree/react_robofriends/robofriends_redux

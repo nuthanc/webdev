@@ -24,3 +24,22 @@
 * For ex: if we send JS object, then the backend server which may be Python won't understand it
 * So we have JSON and XML, but JSON is more efficient
 * JSON is text, written with Javascript object notation
+
+### AJAX
+
+* AJAX = Asynchronous JavaScript And XML.
+* It uses a browser built-in XMLHttpRequest object to request data from web server
+* Server sends a Response back(in form of JSON or XML) to the Browser
+* The response is read by JavaScript and Proper action (like page update) is performed by JavaScript
+* Single Page Applications(Base page and then dynamic contents) 
+
+### Promise
+
+* A Promise is an object that may produce a single value some time in the future
+* Either a resolved value, or a reasone that it's not resolved(rejected)
+![Promise](img/promise.png)
+* .catch catches any of errors in the then statement
+* 3 states
+  * Fulfilled
+  * Rejected
+  * Pending

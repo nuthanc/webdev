@@ -43,3 +43,9 @@
   * Fulfilled
   * Rejected
   * Pending
+
+### Async Await
+
+* To make it look like synchronous programming
+* Looks Cleaner
+![Async Await](img/aa.png)

@@ -1,5 +1,8 @@
 # Webdev course by Andrei
 
+### Manual or Notes from Student
+* https://github.com/zero-to-mastery/complete-web-developer-manual#02
+
 ### Robofriends project
 * Andrei's Robofriend repo: https://github.com/aneagoie/robofriends
 * Demo: https://aneagoie.github.io/robofriends/

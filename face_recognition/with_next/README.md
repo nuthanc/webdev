@@ -70,12 +70,20 @@ npm i express-validator
 ### Auth model
 
 * Create models/user.ts in auth
-
+* toJSON for json representation of User Model
+  * the password, _id and __v are just being deleted in the JSON representation and not in the actual User model
+* Since we are using json from body-parser as middleware, all our requests and responses are converted to json
+* **this** in pre middleware's save is a **Document object**
 ### Use my common middleware
 
 ```sh
 npm i @rztickets/common
 ```
+* Use this for middlewares and errors
+
+### Error Handling
+
+* Need express-async-errors, otherwise we get some Promise error
 
 ### JWT and cookie-session
 
@@ -89,6 +97,12 @@ npm i jsonwebtoken @types/jsonwebtoken
 
 * 4 routes: sign up, sign in, sign out and current user
 
-### Signing Up
+### Signing Up and In
 
-* While signing up, validate the body using express-validator's body
+* While signing up and signing in, validate the body using express-validator's body
+* Check for existingUser in the db
+* Build if it doesn't exist
+* Save 
+* Then create jwt using jwt.sign 
+* Provide JWT key as 2nd argument, which is passed from kubectl secret to deployment file
+* Then attach jwt to req.session(Need to learn Cookie middleware internals) and send the user as Response along with status code

@@ -29,10 +29,11 @@ npm i bootstrap
 
 * Import bootstrap in _app.js for Global CSS
 
-### SignUp Form
+### SignUp and SignIn Form
 
 * Add SignUp form in the Index page
 * Now moved to pages/auth/signup.js
+* Then made a Component called Form for reuse in signin.js
 
 ### Auth dir
 
@@ -69,3 +70,25 @@ npm i express-validator
 ### Auth model
 
 * Create models/user.ts in auth
+
+### Use my common middleware
+
+```sh
+npm i @rztickets/common
+```
+
+### JWT and cookie-session
+
+```sh
+npm i cookie-session 
+npm i --save-exact @types/cookie-session@2.0.39
+npm i jsonwebtoken @types/jsonwebtoken
+```
+
+### Create routes in auth 
+
+* 4 routes: sign up, sign in, sign out and current user
+
+### Signing Up
+
+* While signing up, validate the body using express-validator's body

@@ -106,3 +106,17 @@ npm i jsonwebtoken @types/jsonwebtoken
 * Then create jwt using jwt.sign 
 * Provide JWT key as 2nd argument, which is passed from kubectl secret to deployment file
 * Then attach jwt to req.session(Need to learn Cookie middleware internals) and send the user as Response along with status code
+
+### Tests
+```sh
+cd auth
+npm install --save-dev @types/jest @types/supertest jest ts-jest supertest mongodb-memory-server
+```
+* supertest for assigning ephemeral port
+  * If multiple services listen on the same port, we are gonna have some problem
+* Since we are running tests locally, we need a db
+* For this, we use mongodb-memory-server
+* Also with in memory mongo, we can run multiple databases at the same time
+  * Tests for different services concurrently on the same machine
+* Add test configurations in package.json
+* setup done in test/setup.ts

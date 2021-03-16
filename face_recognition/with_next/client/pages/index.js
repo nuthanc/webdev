@@ -1,7 +1,7 @@
 import Head from 'next/head';
+import SearchBar from '../components/SearchBar';
 
-export default function Home() {
-
+const Home = ({currentUser}) => {
   return (
     <div className="Home container">
       <Head>
@@ -11,8 +11,10 @@ export default function Home() {
         <h1 className="display-4">Hello, world!</h1>
         <p className="lead">This Magic Brain will detect faces in your pictures. Give it a try</p>
       </div>
+      
+      {currentUser && <SearchBar />}
     </div>
   );
 }
 
-process.on('warning', (e) => console.warn(e.stack));
+export default Home;

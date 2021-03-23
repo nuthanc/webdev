@@ -1,7 +1,4 @@
-import { useState } from 'react';
-
-const SearchBar = () => {
-  const [url, setURL] = useState('');
+const SearchBar = ({ onInputChange, onSubmit }) => {
   return (
     <div className="SearchBar">
       <div className="input-group">
@@ -11,14 +8,15 @@ const SearchBar = () => {
           placeholder="Image URL"
           aria-label="Search"
           aria-describedby="search-addon"
-          onChange={(e) => setURL(e.target.value)}
+          onChange={onInputChange}
         />
-        <button type="button" className="btn btn-outline-primary">
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={onSubmit}
+        >
           Detect
         </button>
-      </div>
-      <div className="mt-2 text-center">
-        <img src={url}/>
       </div>
     </div>
   );

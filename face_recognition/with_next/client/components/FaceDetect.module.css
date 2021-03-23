@@ -1,0 +1,18 @@
+.imgSizing {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 0.5rem;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.box {
+  position: absolute;
+
+  border: 2px solid blue;
+  background-color: transparent;
+}

@@ -120,3 +120,11 @@ npm install --save-dev @types/jest @types/supertest jest ts-jest supertest mongo
   * Tests for different services concurrently on the same machine
 * Add test configurations in package.json
 * setup done in test/setup.ts
+
+### Clarifai
+
+* Sign Up to Clarifai
+* Get Clarifai API key in my-first-application Dashboard
+```sh
+cd client && npm i clarifai
+```

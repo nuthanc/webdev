@@ -10,7 +10,7 @@ const app = new Clarifai.App({
 
 const Home = ({ currentUser }) => {
   const [url, setURL] = useState('');
-  const [box, setBox] = useState(null);
+  const [boxes, setBoxes] = useState([]);
 
   const onInputChange = (e) => {
     setURL(e.target.value);
@@ -24,7 +24,8 @@ const Home = ({ currentUser }) => {
         url
       );
       console.log(response);
-      setBox(response.outputs[0].data.regions[0].region_info.bounding_box);
+      setBoxes(response.outputs[0].data.regions);
+      // setBoxes(response.outputs[0].data.regions[0].region_info.bounding_box);
     } catch (e) {
       console.error(e);
     }
@@ -35,7 +36,7 @@ const Home = ({ currentUser }) => {
       return (
         <React.Fragment>
           <SearchBar onInputChange={onInputChange} onSubmit={onSubmit} />
-          <FaceDetect box={box} url={url}/>
+          <FaceDetect boxes={boxes} url={url}/>
         </React.Fragment>
       );
     }

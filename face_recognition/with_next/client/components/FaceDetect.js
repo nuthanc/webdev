@@ -1,47 +1,57 @@
 import React, { useEffect, useState } from 'react';
 import styles from './FaceDetect.module.css';
 
-const FaceDetect = ({ box, url }) => {
-  const [rectBox, setRectBox] = useState({});
+const FaceDetect = ({ boxes, url }) => {
+  const [rectBoxes, setRectBoxes] = useState([]);
   const imageRef = React.createRef();
-  // Use useState for box
+  // Use useState for boxes
   useEffect(() => {
     const height = imageRef.current.clientHeight;
     const width = imageRef.current.clientWidth;
-    if (box) {
-      console.log('Box is', box);
-      createBox(height, width, box);
+    if (boxes) {
+      console.log('rectBoxes is', rectBoxes);
+      createBox(height, width, boxes);
     }
     if (url === '') {
-      setRectBox({});
+      setRectBoxes([]);
     }
-  }, [box, url]);
+  }, [boxes, url]);
 
-  const createBox = (height, width, box) => {
-    console.log({ height });
-    console.log({ width });
-    const top = height * box.top_row;
-    const bottom = height - height * box.bottom_row;
-    const left = width * box.left_col;
-    const right = width - width * box.right_col;
-    setRectBox({ ...rectBox, top, bottom, left, right });
+  const createBox = (height, width, boxes) => {
+    let boxArray = [];
+    boxes.map((box) => {
+      const {
+        top_row,
+        bottom_row,
+        left_col,
+        right_col,
+      } = box.region_info.bounding_box;
+      const top = height * top_row;
+      const bottom = height - height * bottom_row;
+      const left = width * left_col;
+      const right = width - width * right_col;
+      const rect = { top, bottom, left, right };
+      boxArray.push(rect);
+    });
+    setRectBoxes(boxArray);
   };
 
   const renderBox = () => {
-    console.log('In renderBox');
-    const { top, bottom, left, right } = rectBox;
-    console.log({ top, bottom, left, right });
-    if (top) {
-      return (
-        <div
-          className={styles.box}
-          style={{ top: top, bottom: bottom, left: left, right: right }}
-        ></div>
-      );
-    }
-    // if (url === '') {
-    //   return <div></div>;
-    // }
+    return rectBoxes.map((box) => {
+      if (box.top)
+        return (
+          <div
+            key={box.top}
+            className={styles.box}
+            style={{
+              top: box.top,
+              bottom: box.bottom,
+              left: box.left,
+              right: box.right,
+            }}
+          ></div>
+        );
+    });
   };
 
   return (

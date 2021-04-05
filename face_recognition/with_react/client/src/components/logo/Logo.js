@@ -7,16 +7,20 @@ const Logo = () => {
   return (
     <div className="ma4 mt0">
       <Tilt
-        className="Tilt shadow-2"
+        className="Tilt br2 shadow-2"
         options={{ max: 55 }}
         style={{ height: 150, width: 150 }}
       >
         <div className="Tilt-inner pa3">
-          <img src={brain} alt='logo' style={{maxWidth: '80%', maxHeight: '100%', marginTop: '8px'}}/>
+          <img
+            src={brain}
+            alt="logo"
+            style={{ maxWidth: '80%', maxHeight: '100%', marginTop: '8px' }}
+          />
         </div>
       </Tilt>
     </div>
   );
-}
+};
 
 export default Logo;

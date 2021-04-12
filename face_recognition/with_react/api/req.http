@@ -1,0 +1,27 @@
+# http://localhost:3000/
+
+# http://localhost:3000/profile/125
+
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "cookies"
+}
+
+# POST http://localhost:3000/register
+# Content-Type: application/json
+
+# {
+#   "email": "nana@gmail.com",
+#   "password": "han",
+#   "name": "Nan"
+# }
+
+# PUT http://localhost:3000/image
+# Content-Type: application/json
+
+# {
+#   "id": "124"
+# }

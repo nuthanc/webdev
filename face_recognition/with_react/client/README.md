@@ -80,3 +80,8 @@ More about it in: https://reactjs.org/docs/react-component.html#setstate
 ### To set the styles for Bounding box
 
 * Author inspected the Clarafai Face Detection site to get the styles
+
+### Note
+
+* Arrow functions are not required **for Life cycle methods** that come with React
+

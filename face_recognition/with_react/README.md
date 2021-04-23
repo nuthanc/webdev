@@ -91,3 +91,30 @@ DELETE FROM users WHERE name='Andrei';
 DROP TABLE login;
 DROP TABLE users;
 ```
+
+### Setting up DB for our Project
+
+```sh
+createdb 'smart-brain';
+
+CREATE TABLE users (
+  id serial PRIMARY KEY,
+  name VARCHAR(100),
+  email text UNIQUE NOT NULL,
+  entries BIGINT DEFAULT 0,
+  joined TIMESTAMP NOT NULL
+);
+
+CREATE TABLE login (
+  id serial PRIMARY KEY,
+  hash VARCHAR(100),
+  email text UNIQUE NOT NULL
+);
+```
+* Use Knex.js or Pg-promise
+```sh
+cd api
+npm i knex
+npm install pg
+```
+* Rest of db data in api README

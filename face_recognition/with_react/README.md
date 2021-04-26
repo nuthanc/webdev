@@ -118,3 +118,12 @@ npm i knex
 npm install pg
 ```
 * Rest of db data in api README
+
+### Code Review
+
+* Review the code, see what can be improved
+* In our case, state is not cleared when the User signs out
+* This is fixed by adding initialState and when the User signs out, we set the state to initialState
+* Also, catch needs to be there after then in fetch too
+* Remove duplicated code
+* Add controllers which are similiar to routes

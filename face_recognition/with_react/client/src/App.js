@@ -26,8 +26,7 @@ const app = new Clarifai.App({
   apiKey: 'a18a3032744a41b79a3497ab02fb15f8',
 });
 
-class App extends Component {
-  state = {
+const initialState = {
     input: '',
     imageUrl: '',
     box: {},
@@ -40,7 +39,9 @@ class App extends Component {
       entries: 0,
       joined: '',
     },
-  };
+  }
+class App extends Component {
+  state = initialState;
 
   loadUser = (data) => {
     const { id, name, email, entries, joined } = data;
@@ -94,7 +95,8 @@ class App extends Component {
             .then((count) => {
               this.setState(Object.assign(this.state.user, { entries: count }));
               // this.setState({ ...this.state.user, entries: count }); Using this is not incrementing the count, maybe because of async
-            });
+            })
+            .catch(console.log);
         }
         this.displayFaceBox(this.calculateFaceLocation(response));
       })
@@ -103,7 +105,7 @@ class App extends Component {
 
   onRouteChange = (route) => {
     if (route === 'signout') {
-      this.setState({ isSignedIn: false });
+      this.setState(initialState);
     } else if (route === 'home') {
       this.setState({ isSignedIn: true });
     }

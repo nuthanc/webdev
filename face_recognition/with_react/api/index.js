@@ -31,9 +31,10 @@ app.get('/', (req, res) => {
     .catch((err) => res.status(400).json('Error'));
 });
 
-app.post('/signin', (req, res) => {
-  signin.handleSignin(db, bcrypt); // Similar to signin.handleSignin(db, bcrypt)(req, res), req,res gets passed automatically
-});
+app.post(
+  '/signin',
+  signin.handleSignin(db, bcrypt) // Similar to signin.handleSignin(db, bcrypt)(req, res), req,res gets passed automatically
+);
 
 app.post('/register', (req, res) => {
   register.handleRegister(req, res, db, bcrypt);
@@ -45,6 +46,10 @@ app.get('/profile/:id', (req, res) => {
 
 app.put('/image', (req, res) => {
   image.handleImage(req, res, db);
+});
+
+app.post('/imageurl', (req, res) => {
+  image.handleApiCall(req, res);
 });
 
 app.listen(3000, () => console.log('App listening on port 3000'));

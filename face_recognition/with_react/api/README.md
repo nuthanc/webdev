@@ -49,3 +49,13 @@ npm install pg
 ### Transaction in Postgres
 
 * Creating transaction while registering so that if one operation fails, then all fails
+
+### Security Review
+
+* Doesn't have validation like email and password
+  * Blank username and password while registering
+* Backend server never trusts validation done by the Frontend
+  * It should do its own validation
+* Careful of API keys
+  * Solution is to move that key from Frontend to Backend
+  

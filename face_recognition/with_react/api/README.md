@@ -58,4 +58,14 @@ npm install pg
   * It should do its own validation
 * Careful of API keys
   * Solution is to move that key from Frontend to Backend
-  
+
+### Environment Variables
+
+```sh
+# In bash
+PORT=3000 node index.js
+# Then in index.js listen to process.env.PORT
+
+# In Fish
+env PORT=3000 node index.js
+```

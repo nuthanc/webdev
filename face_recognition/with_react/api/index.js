@@ -22,13 +22,14 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  db.select('*')
-    .from('users')
-    .then((users) => {
-      if (users.length) res.send(users);
-      else res.status(400).json('No users');
-    })
-    .catch((err) => res.status(400).json('Error'));
+  // db.select('*')
+  //   .from('users')
+  //   .then((users) => {
+  //     if (users.length) res.send(users);
+  //     else res.status(400).json('No users');
+  //   })
+  //   .catch((err) => res.status(400).json('Error'));
+  res.send('it is working');
 });
 
 app.post(
@@ -52,4 +53,6 @@ app.post('/imageurl', (req, res) => {
   image.handleApiCall(req, res);
 });
 
-app.listen(3000, () => console.log('App listening on port 3000'));
+app.listen(process.env.PORT || 3000, () =>
+  console.log(`App listening on port ${process.env.PORT}`)
+);

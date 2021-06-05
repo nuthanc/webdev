@@ -1,5 +1,7 @@
 ### Robofriends with Redux
 
+* * Standard implementation of Redux from Stephen: https://github.com/nuthanc/react/tree/master/streams/client/src
+
 ```sh
 npm i redux react-redux axios redux-thunk
 npm i tachyons

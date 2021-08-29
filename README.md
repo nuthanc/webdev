@@ -38,7 +38,7 @@ p in h2
 ### Box model
 * Every element has a box
 * Each box has Inner Content box, padding, border and margin
-* Inner Content box: weight and height
+* Inner Content box: width and height
 
 ### Borders
 * Generally units in px because they are very small
